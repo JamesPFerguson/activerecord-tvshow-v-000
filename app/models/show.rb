@@ -5,7 +5,7 @@ def self.highest_rating
 end
 
 def self.most_popular_show
-  self.order("rating DESC").limit(1)
+  self.order("rating DESC").limit(1)[0]
 end
 
 
