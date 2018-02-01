@@ -4,8 +4,8 @@ def self.highest_rating
   Show.maximum("rating")
 end
 
-def self.most_popular
-  self.highest_rating
+def self.most_popular_show
+  self.highest_rating.name
 end
 
 
