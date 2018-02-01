@@ -5,7 +5,7 @@ def self.highest_rating
 end
 
 def self.most_popular_show
-  self.highest_rating.name
+  self.maximum("rating")
 end
 
 
