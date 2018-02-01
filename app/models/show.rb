@@ -8,6 +8,8 @@ def self.most_popular_show
   self.order("rating DESC").limit(1)[0]
 end
 
-
+def self.lowest_rating
+  Show.minimum("rating")
+end
 
 end
